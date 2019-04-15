@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= 'Search Hotels'
+  form(method='POST' action='/searchHotels')
+    div.form-group
+      label(for='cityCode') City Code (XXX):
+      input#cityCode.form-control(type='text', placeholder='City Code (3 Characters, e.g. PAR)' name='cityCode')
+    div.form-group
+      label(for='checkInDate') Check-In Date (YYYY-MM-DD):
+      input#checkInDate.form-control(type='text', placeholder='Check-In Date in format YYYY-MM-DD' name='checkInDate')
+    div.form-group
+      label(for='checkOutDate') Check-Out Date (YYYY-MM-DD):
+        input#checkOutDate.form-control(type='text', placeholder='Check-Out Date in format YYYY-MM-DD' name='checkOutDate')
+    button.btn.btn-primary(type='submit') Search
