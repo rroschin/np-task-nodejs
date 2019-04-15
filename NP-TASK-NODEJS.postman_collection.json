@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "94b02221-a7a1-4d64-9de7-0b00db7a97eb",
+		"name": "NP-TASK-NODEJS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Health Check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/healthcheck",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"healthcheck"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Hotels",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/hotels?cityCode=PAR&checkInDate=2019-04-14&checkOutDate=2019-04-15",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"hotels"
+					],
+					"query": [
+						{
+							"key": "cityCode",
+							"value": "PAR"
+						},
+						{
+							"key": "checkInDate",
+							"value": "2019-04-14"
+						},
+						{
+							"key": "checkOutDate",
+							"value": "2019-04-15"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
